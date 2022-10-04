@@ -33,6 +33,7 @@ main {
   width: 90vw;
   height: 90vh;
   max-width: 370px;
+  max-height: 650px;
   display: flex;
   flex-direction: column;
   background-color: var(--neutral-white);
@@ -128,12 +129,14 @@ p {
   }
   .product-description {
     width: 50%;
-    height: 90%;
-    padding: 2.5rem;
+    height: 100%;
+    padding: 1rem 2.5rem;
   }
   main {
     flex-direction: row;
     min-width: 700px;
+    height: 70vh;
+    max-height: 500px;
   }
   p {
     font-size: 1rem;
