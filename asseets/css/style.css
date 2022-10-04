@@ -32,6 +32,7 @@ body {
 main {
   width: 90vw;
   height: 90vh;
+  max-width: 370px;
   display: flex;
   flex-direction: column;
   background-color: var(--neutral-white);
@@ -104,10 +105,37 @@ h1 {
 }
 p {
   color: var(--neutral-dark-grayish-blue);
-  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 1.6;
 }
 
 .product-type {
   letter-spacing: 0.2rem;
+}
+
+/*DESKTOP*/
+
+@media only screen and (min-width: 768px) {
+  .product-img {
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    border-start-start-radius: 1rem;
+    border-start-end-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+  .product-description {
+    width: 50%;
+    height: 90%;
+    padding: 2.5rem;
+  }
+  main {
+    flex-direction: row;
+    min-width: 700px;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
